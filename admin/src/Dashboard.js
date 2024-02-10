@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   const fetchSubscribers = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/subscribers");
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/subscribers`);
       setSubscribers(response.data);
     } catch (error) {
       console.error("Error fetching subscribers:", error);
@@ -35,7 +35,7 @@ const Dashboard = () => {
   const handleUpdateChosenStatus = async (subscriberId, newStatus) => {
     try {
       await axios.put(
-        `http://localhost:3001/subscribers/update/${subscriberId}`,
+        `${process.env.REACT_APP_BACKEND_URL}/subscribers/update/${subscriberId}`,
         {
           Chosen: newStatus,
         }
@@ -64,7 +64,7 @@ const Dashboard = () => {
   const handleRemoveSubscription = async (subscriberId) => {
     try {
       await axios.delete(
-        `http://localhost:3001/subscribers/remove/${subscriberId}`
+        `${process.env.REACT_APP_BACKEND_URL}/${subscriberId}`
       );
       fetchSubscribers(); // Fetch updated subscribers after removal
     } catch (error) {

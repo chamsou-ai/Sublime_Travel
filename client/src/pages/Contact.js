@@ -19,7 +19,7 @@ const Contact = () => {
   });
   const sendEmail = async (data) => {
     try {
-      await axios.post("http://localhost:3001/send-question-email", data);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/send-question-email`, data);
       setSuccessModalIsOpen(true);
       console.log("Email sent successfully");
     } catch (error) {

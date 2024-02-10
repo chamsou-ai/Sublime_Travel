@@ -11,7 +11,7 @@ const Rating = () => {
   useEffect(() => {
     const fetchChosenSubscribers = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/subscribers/chosen");
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/subscribers/chosen`);
         setSubscribers(response.data); // Update subscribers with chosen subscribers
       } catch (error) {
         console.error("Error fetching chosen subscribers:", error);

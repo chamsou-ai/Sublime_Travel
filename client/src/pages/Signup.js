@@ -53,7 +53,7 @@ const Signup = () => {
 
   const sendEmail = async (data) => {
     try {
-      await axios.post("http://localhost:3001/subscriber-send-email", data);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/subscriber-send-email`, data);
       setSuccessModalIsOpen(true);
       console.log("Email sent successfully");
     } catch (error) {
@@ -82,7 +82,7 @@ const Signup = () => {
 
     try {
       // Make a POST request to your backend endpoint with specific fields
-      await axios.post("http://localhost:3001/subscribers/insert", {
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/subscribers/insert`, {
         FirstName: firstName,
         LastName: lastName,
         Email: email,
