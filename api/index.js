@@ -29,7 +29,7 @@ app.post("/admin/login", (req, res) => {
   const { username, password } = req.body;
 
   db.query(
-    "SELECT * FROM Admins WHERE Username = ?",
+    "SELECT * FROM admins WHERE Username = ?",
     [username],
     async (err, results) => {
       if (err) {
@@ -74,7 +74,7 @@ app.put("/admin/update", async (req, res) => {
 
     // Update the admin's username and password in the database
     db.query(
-      "UPDATE Admins SET Username = ?, Password = ? WHERE AdminId = 1",
+      "UPDATE admins SET Username = ?, Password = ? WHERE AdminId = 1",
       [newUsername, hashedPassword],
       (err, results) => {
         if (err) {
@@ -99,7 +99,7 @@ app.post("/admin/create", async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     db.query(
-      "INSERT INTO Admins (Username, Password) VALUES (?, ?)",
+      "INSERT INTO admins (Username, Password) VALUES (?, ?)",
       [username, hashedPassword],
       (err, results) => {
         if (err) {
@@ -122,7 +122,7 @@ app.post("/subscribers/insert", (req, res) => {
     req.body;
 
   db.query(
-    "INSERT INTO Subscribers (FirstName, LastName, Email, Phone, Comment, Chosen, AdminId) VALUES (?, ?, ?, ?, ?, false, 1)",
+    "INSERT INTO subscribers (FirstName, LastName, Email, Phone, Comment, Chosen, AdminId) VALUES (?, ?, ?, ?, ?, false, 1)",
     [FirstName, LastName, Email, Phone, Comment, Chosen, AdminId],
     (err, results) => {
       if (err) {
@@ -136,7 +136,7 @@ app.post("/subscribers/insert", (req, res) => {
 });
 // Get Subscribers
 app.get("/subscribers", (req, res) => {
-  db.query("SELECT * FROM Subscribers", (err, results) => {
+  db.query("SELECT * FROM subscribers", (err, results) => {
     if (err) {
       console.error("Error executing query:", err);
       res.status(500).send("Internal Server Error");
@@ -147,7 +147,7 @@ app.get("/subscribers", (req, res) => {
 });
 // Get Chosen Subscribers
 app.get("/subscribers/chosen", (req, res) => {
-  db.query("SELECT * FROM Subscribers WHERE Chosen = true", (err, results) => {
+  db.query("SELECT * FROM subscribers WHERE Chosen = true", (err, results) => {
     if (err) {
       console.error("Error executing query:", err);
       res.status(500).send("Internal Server Error");
@@ -168,7 +168,7 @@ app.put("/subscribers/update/:id", async (req, res) => {
     // Update the Chosen status in the database based on subscriberId
     // For example, if using your MySQL setup:
     db.query(
-      "UPDATE Subscribers SET Chosen = ? WHERE SubscriberId = ?",
+      "UPDATE subscribers SET Chosen = ? WHERE SubscriberId = ?",
       [Chosen, subscriberId],
       (err, results) => {
         if (err) {
@@ -191,7 +191,7 @@ app.delete("/subscribers/remove/:id", async (req, res) => {
     // Implement the logic to remove the subscription based on subscriberId
     // For example, if using your MySQL setup:
     db.query(
-      "DELETE FROM Subscribers WHERE SubscriberId = ?",
+      "DELETE FROM subscribers WHERE SubscriberId = ?",
       [subscriberId],
       (err, results) => {
         if (err) {
