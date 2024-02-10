@@ -1,0 +1,124 @@
+.subA__contact-container {
+  display: flex;
+  justify-content: center;
+  background-color: #e5f0fd;
+  align-items: center;
+}
+.subA__contact-container form {
+  margin: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.subA__contact-container input {
+  margin: 1rem 2rem;
+  height: 50px;
+  padding: 1.5rem;
+  border: 1px solid #dddddd;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  outline-color: #263e7a;
+  color: var(--color-serv-big-titles);
+}
+.subA__contact-container input::placeholder {
+  color: #697488;
+}
+.subA__contact-container button {
+  margin: 0.2rem 2rem;
+  padding: 0.8rem 1rem;
+  background-color: var(--bg-button);
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.subA__contact-container a {
+  margin: 0;
+  text-decoration: none;
+}
+.subA__contact-container button:hover {
+  background-color: #2f49b5;
+}
+.subA__contact-welcome {
+  font-size: 18px;
+}
+.subA__contact-loc img {
+  width: 700px;
+  margin-top: 1rem;
+  border-radius: 16px;
+}
+.subA__contact-question-input {
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+  border: 1px solid #dddddd;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  outline-color: #263e7a;
+  color: var(--color-serv-big-titles);
+}
+.subA__contact-question-input::placeholder {
+  color: #697488;
+}
+.subA_property-container-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subA_properties-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.subA_properties-contact p {
+  display: inline-block;
+  margin-left: 2rem;
+  color: var(--color-serv-big-titles);
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .subA__contact-loc img {
+    display: none;
+  }
+  .subA__contact-container form {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: #e5f0fd;
+  }
+  .subA_property-container-contact {
+    flex-direction: row;
+  }
+  .subA_properties-contact {
+    flex-direction: column;
+  }
+  .subA_properties-contact p {
+    font-size: 15px;
+  }
+  .subA_properties-contact img {
+    width: 70px;
+    margin-bottom: 1.5rem;
+  }
+  .notVisible{
+    display: none;
+  }
+}
+@media screen and(max-width:550px) {
+  .subA_property-container-contact {
+    display: none;
+  }
+  .notVisible{
+    display: none;
+  }
+}

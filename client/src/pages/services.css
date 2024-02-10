@@ -1,0 +1,87 @@
+.subA_text-desc{
+  color: var(--color-desc);
+  font-size: 17px;
+  margin: 2rem 7rem;
+}
+.subA_sub-title{
+  color: var(--color-serv-big-titles);
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin: 2rem 7rem;
+}
+.subA__passport-img{
+  display: flex;
+  justify-content: center;
+}
+.subA__passport-img img{
+ width: 800px;
+ border-radius: 10px;
+}
+.subA__services-culture{
+  display: flex;
+  flex-direction: row;
+  margin:2rem 2rem;
+  align-items: center;
+}
+.subA__services-culture img {
+  width: 400px;
+  margin-right: 8rem;
+}
+.subA__services-culture-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subA__services-reservation-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subA__services-reserv img{
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  filter: brightness(0.5);
+  width: 321px;
+}
+.subA__services-reserv{
+  position: relative;
+  text-align: center;
+  width:fit-content;
+  margin: 1rem 3rem;
+}
+@media screen and (max-width: 700px) {
+  .subA_text-desc{
+    margin: 1rem 1rem;
+    font-size: 13px;
+  }
+  .subA_sub-title{
+    margin: 1rem;
+    font-size: 15px;
+  }
+  .subA__passport-img img{
+    width: 100%;
+  }
+  .subA__services-culture{
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .subA__services-culture img {
+    width: 100%;
+    margin: 0rem;
+  }
+  .subA__services-reservation-container{
+    flex-direction: column;
+  }
+  .subA__services-reserv{
+    margin: 1rem 2rem;
+  }
+}

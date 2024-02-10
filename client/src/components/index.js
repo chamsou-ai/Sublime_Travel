@@ -1,0 +1,6 @@
+export {default as CardDest} from './Card_dest'
+export {default as CardRserv} from './Card_reserv'
+export {default as CardTourism} from './Card_tourism'
+export {default as NavBar} from './Navbar'
+export {default as Rating} from './Rating'
+export {default as NavBar_Black} from './Navbar_Black'

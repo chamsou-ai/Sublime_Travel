@@ -1,0 +1,143 @@
+/* dashboard.css */
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* dashboard.css */
+
+.table-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #051036;
+  font-weight: 600;
+  border-collapse: collapse;
+}
+
+.comment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.comment-table th {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #f2f2f2;
+  white-space: nowrap;
+}
+.comment-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.comment-button {
+  background-color: #3554d1;
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.comment-button:hover {
+  background-color: aquamarine;
+  color: #051036;
+}
+.dashboard-text {
+  color: #333;
+  margin-top: 2rem;
+  text-align: center;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.admin-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.logout-icon {
+  margin-right: 5px;
+}
+/* dashboard.css */
+.btn-cntr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.remove-button {
+  background-color: #ff4d4f; /* Red color for emphasis */
+  color: #fff; /* White text for better visibility */
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+.btn-modify-admin {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-modify-admin:hover {
+  background-color: #505050;
+}
+.remove-button:hover {
+  background-color: #ff3333; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .comment-table th,
+  .comment-table td {
+    padding: 8px;
+  }
+
+  .comment-button {
+    padding: 8px 12px;
+  }
+}

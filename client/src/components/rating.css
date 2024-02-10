@@ -1,0 +1,120 @@
+.subA__rating-container {
+  background-color: #cde9f6;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+.subA__rating-commentair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 6rem;
+  transition: opacity 0.5s ease-in-out; /* Add opacity transition */
+}
+
+.subA__rating-commentair-Img_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.subA__rating-commentair-Img_name div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.subA__rating-commentair-Img_name img {
+  width: 100%;
+}
+
+.subA__rating-commentair-Img_name p {
+  width: 200px;
+  font-weight: 500;
+  text-align: center;
+  color: #012241;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.subA__rating-commentair-text {
+  width: 500px;
+  font-size: 18px;
+  color: #051036;
+}
+
+.subA__rating-stars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 6rem;
+  align-items: center;
+}
+
+.subA__rating-stars {
+  display: flex;
+  flex-direction: row;
+  margin-right: 550px;
+}
+
+.subA__rating-stars-happy {
+  margin-right: 3rem;
+}
+
+.subA__rating-dotted-slide {
+  color: #0683c9;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.overralRating_happyPeople {
+  color: #697488;
+  font-size: 20px;
+}
+
+.NumPeople_Avg {
+  color: #012241;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .subA__rating-commentair {
+    flex-direction: column;
+  }
+  .subA__rating-commentair-Img_name {
+    margin-right: 0px;
+  }
+  .subA__rating-commentair-Img_name div {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+  .subA__rating-commentair-Img_name p {
+    font-size: 20px;
+  }
+  .overralRating_happyPeople {
+    font-size: 15px;
+  }
+  .NumPeople_Avg {
+    font-size: 25px;
+  }
+  .subA__rating-commentair-text {
+    width: 300px;
+  }
+  .subA__rating-stars {
+    margin-right: 20px;
+  }
+  .subA__rating-stars-happy {
+    margin-right: 4rem;
+  }
+}
+
+/* Add new CSS rule for fade effect */
+.subA__rating-commentair.fade-out {
+  opacity: 0;
+}

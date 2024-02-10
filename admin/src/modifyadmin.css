@@ -1,0 +1,57 @@
+/* ModifyAdmin.css (create a new CSS file if needed) */
+
+.subA__modify-admin-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subA__modify-admin-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.subA__modify-admin-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subA__modify-admin-container input {
+  margin-bottom: 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subA__modify-admin-container button {
+  background-color: #051036;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.subA__modify-admin-container button:hover {
+  background-color: #0c1d59;
+}
+
+.modify-admin-cre::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #697488;
+}
+.modify-admin-cre {
+  height: 40px;
+  padding: 0.5rem;
+  font-size: 18px;
+  outline-color: #0c1d59;
+  font-weight: 500;
+}

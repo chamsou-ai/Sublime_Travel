@@ -1,0 +1,371 @@
+.forFlex {
+  display: flex;
+  justify-content: center;
+}
+.descSublime {
+  color: #697488;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 30px;
+  width: 850px;
+}
+.descCulture {
+  color: #697488;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 30px;
+  width: 1250px;
+}
+.subA_title {
+  color: var(--color-serv-big-titles);
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin: 2rem 6rem;
+}
+/* Destination Section */
+.subA__Cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subA_see-dests_btn {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background: #dad9e9;
+  color: var(--color-voir);
+  font-family: var(--font-familly);
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  align-items: center;
+}
+/* Properties Section */
+.subA_prop-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.subA_property-container {
+  display: flex;
+  flex-direction: column;
+}
+.subA_properties {
+  display: flex;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.subA_properties p {
+  display: inline-block;
+  margin-left: 2rem;
+  color: var(--color-serv-big-titles);
+  font-size: 22px;
+  font-weight: 500;
+}
+/* Services Section */
+
+.subA_sevices-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.subA_services-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.subA_services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subA_service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subA_service p {
+  color: #012241;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  text-align: center;
+}
+/* Assurance Section */
+.subA__assurance {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  margin: 1.5rem;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+}
+.assurance_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: all 0.3s;
+}
+.assurance__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 10px;
+  line-height: 27px;
+  text-align: center;
+  transition: all 0.3s; /* Add a transition for smoother hover effect */
+}
+.assurance-desc {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  width: 444px;
+  text-align: center;
+}
+.subA__assurance-container {
+  display: flex;
+  justify-content: center;
+}
+.devis-button {
+  margin-top: 15px;
+  border-radius: 5px;
+  background: var(--bg-button-devis);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.devis-button:hover {
+  background: #2c4683;
+}
+/* Culture Section */
+.culture__cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.culture__small-cards-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.culture__card-egypt img,
+.culture__small-card img {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.culture__card-egypt img {
+  filter: brightness(0.7);
+  width: 321px;
+}
+.culture__card-egypt,
+.culture__small-card {
+  margin: 1rem;
+}
+.culture__card-egypt {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+.culture__small-card {
+  width: 400px;
+}
+.culture__card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* or your preferred text color */
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.culture__card-text p {
+  width: 300px;
+}
+.culture__button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.culture__button {
+  /* Hide the button by default */
+  /* Customize button styles */
+  color: #fff;
+  background-color: #ffffff00;
+  padding: 0.6rem 2rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.culture__button:hover {
+  color: black;
+  background-color: white;
+}
+/* Media Query Section */
+
+@media screen and (max-width: 700px) {
+  .descSublime {
+    font-size: 18px;
+  }
+  .descCulture {
+    font-size: 18px;
+  }
+  .dest_title {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .subA_see-dests_btn {
+    font-size: 11px;
+  }
+  .subA_animated-image {
+    display: none;
+  }
+  .subA_property-container {
+    flex-direction: row;
+  }
+  .subA_properties {
+    flex-direction: column;
+  }
+  .subA_prop-container {
+    margin: 0;
+    justify-content: center;
+  }
+  .subA_properties p {
+    font-size: 15px;
+  }
+  .subA_properties img {
+    width: 70px;
+    margin-bottom: 1.5rem;
+  }
+  /*Section of services*/
+  .subA_services {
+    justify-content: center;
+  }
+  .subA_service {
+    margin: 0 1rem;
+  }
+  .subA_services-image {
+    display: none;
+    margin: 0;
+  }
+  .subA_service img {
+    width: 40px;
+  }
+  .subA_service p {
+    font-size: 10px;
+    text-align: center;
+  }
+  /* Assurance Section */
+  .assurance__content {
+    line-height: 20px;
+    left: 23%;
+  }
+  .assurance-desc {
+    font-size: 13px;
+    width: 300px;
+  }
+  .devis-button {
+    font-size: 13px;
+    margin-top: 25px;
+  }
+  /* Culture section */
+  .culture__cards-container {
+    margin: 0;
+  }
+  .culture__cards-container {
+    flex-direction: column;
+  }
+
+  .culture__card-egypt,
+  .culture__small-card {
+    margin: 0.5rem;
+  }
+  .culture__small-card {
+    width: auto;
+    margin-left: 0px;
+  }
+  .culture__card-egypt img,
+  .culture__small-card img {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .culture__small-cards-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .descSublime {
+    font-size: 12px;
+  }
+  .descCulture {
+    font-size: 12px;
+  }
+  .subA__Cards-container {
+    flex-direction: column;
+  }
+  .dest_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .subA_property-container {
+    flex-direction: column;
+  }
+  .dest_title {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .subA_properties {
+    flex-direction: row;
+  }
+  .subA_properties img {
+    width: 50px;
+  }
+  .subA_title {
+    margin: 1rem 2rem;
+    font-size: 18px;
+  }
+  .assurance__content {
+    left: 3%;
+  }
+}

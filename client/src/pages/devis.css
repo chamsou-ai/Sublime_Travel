@@ -1,0 +1,146 @@
+.subA__devis-container {
+  margin: 2rem 3rem;
+}
+.subA__devis-container div {
+  margin-bottom: 2rem;
+}
+.subA__devis-container label {
+  margin-right: 2rem;
+  font-size: 18px;
+  color: #012241;
+  font-weight: 500;
+  white-space: nowrap; /* Added to prevent label text from wrapping */
+}
+.subA_title-devisPage {
+  color: var(--color-serv-big-titles);
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin: 2rem 2rem;
+}
+.subA__devis-info_content {
+  margin: 1rem 4rem;
+}
+.subA__devis-info_content input,
+select {
+  width: 300px;
+  height: 40px;
+  padding: 0.5rem 1rem;
+  border: 1px solide #697488;
+  outline: #697488;
+  margin: 1rem;
+  font-size: 18px;
+  color: #012241;
+  font-weight: 500;
+}
+.devis-buttonPage {
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #003049;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.8rem 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+.devis-buttonPage:hover {
+  background: #2c4683;
+}
+.subA__devis-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.subA__devis-container img {
+  margin-right: 2rem;
+  width: 500px;
+  height: min-content;
+  border-radius: 5px;
+}
+.btn_devisPage {
+  display: flex;
+  justify-content: center;
+}
+/* modal.css */
+.hidden {
+  display: none;
+}
+.visible {
+  
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 400px; /* Adjust the max-width as needed */
+  width: 100%;
+  font-size: 18px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal p {
+  margin-bottom: 20px;
+}
+
+.modal button {
+  background-color: #3554d1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.modal button:hover {
+  background-color: #263fa5;
+}
+
+/* Add more styles as needed */
+
+@media screen and (max-width: 700px) {
+  .subA__devis-container img {
+    display: none;
+  }
+  .subA__devis-info_content {
+    margin: 1rem;
+  }
+  .subA__devis-container {
+    margin: 0.5rem;
+  }
+  .subA__devis-info_content input,
+  select {
+    width: 200px;
+    font-size: 14px;
+  }
+  .subA__devis-container label {
+    font-size: 12px;
+    margin-right: 1px;
+    white-space: wrap;
+  }
+  .subA_title-devisPage {
+    margin: 1rem 0.5rem;
+    font-size: 18px;
+  }
+}

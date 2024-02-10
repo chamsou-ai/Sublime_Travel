@@ -1,0 +1,68 @@
+/* Add these styles to your existing card_dest.css file */
+
+.Card_section {
+  position: relative;
+  overflow: hidden; /* Adjust the card width if needed */
+  height: 200px; /* Adjust the card height if needed */
+  margin: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  height: 330px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: all 0.3s;
+}
+.card-image:hover{
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s; /* Add a transition for smoother hover effect */
+}
+
+.DescTour {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .Card_section{
+    width:240px;
+    height: 320px;
+  }
+  .DescTour{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Card_section{
+    width:120px;
+    height: 200px;
+  }
+  .DescTour{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Card_section{
+    width:200px;
+    height: 280px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
