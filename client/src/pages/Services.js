@@ -126,12 +126,14 @@ const Services = () => {
           <img src={billet} />
           <div className="culture__card-text">
             <p>
-              Avec Sublime, chaque voyage devient une ode à la diversité
-              culturelle et à la préservation du patrimoine. Embarquez pour un
-              périple qui célèbre l'essence même de chaque lieu, guidé par notre
-              engagement envers une exploration significative et respectueuse.
-              Bienvenue dans une aventure où chaque instant est une célébration
-              de la beauté du monde.
+              Voyagez avec aisance grâce à notre service de réservation de
+              billets d'avion chez Sublime Travel. Nous simplifions la
+              planification de vos vols en offrant une variété d'options, des
+              vols directs aux itinéraires flexibles, avec des tarifs
+              compétitifs. Bénéficiez d'une réservation sans tracas et d'une
+              assistance constante pour des voyages en toute confiance, que
+              votre destination soit proche ou lointaine. Sublime Travel vous
+              accompagne tout au long de votre périple aérien
             </p>
           </div>
         </div>
@@ -139,12 +141,13 @@ const Services = () => {
           <img src={reserv1} />
           <div className="culture__card-text">
             <p>
-              Avec Sublime, chaque voyage devient une ode à la diversité
-              culturelle et à la préservation du patrimoine. Embarquez pour un
-              périple qui célèbre l'essence même de chaque lieu, guidé par notre
-              engagement envers une exploration significative et respectueuse.
-              Bienvenue dans une aventure où chaque instant est une célébration
-              de la beauté du monde.
+              Simplifiez votre expérience de voyage avec notre service de
+              Réservation d'Hôtels chez Sublime Travel. Nous mettons à votre
+              disposition une sélection minutieuse d'établissements, allant des
+              retraites luxueuses aux hébergements pittoresques, pour répondre à
+              toutes vos préférences. Profitez de réservations simples, d'une
+              assistance personnalisée, et de tarifs compétitifs, garantissant
+              un séjour inoubliable, quel que soit votre choix de destination
             </p>
           </div>
         </div>
