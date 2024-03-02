@@ -50,7 +50,7 @@ const footer = () => {
         </div>
       </div>
       <div className="subA__footer-copyright">
-        © 2023 by Chamsou Meka All rights reserved.
+        © 2024 by Chamssedin Mekahal All rights reserved.
       </div>
     </div>
   );

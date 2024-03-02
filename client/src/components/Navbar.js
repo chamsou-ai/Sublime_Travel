@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className="subA__navbar">
       <div className="subA__navbar-links">
         <div className="subA__navbar-links_logo">
-          <img src={logo} />
+          <img onClick={()=>{Navigate('/')}} style={{ cursor:'pointer' }} src={logo} />
         </div>
       </div>
       <div className="subA__navbar-sign">
