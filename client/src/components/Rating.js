@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./rating.css";
 import manImg1 from "../asset/others/user.png";
+import threeDot from "../asset/more.png"
 
 const Rating = () => {
   const [subscribers, setSubscribers] = useState([]);
@@ -68,7 +69,7 @@ const Rating = () => {
         </p>
       </div>
       <div className="subA__rating-stars-container">
-        <p className="subA__rating-dotted-slide">...</p>
+        <img className="subA__rating-dotted-slide" src={threeDot} />
       </div>
     </div>
   );
